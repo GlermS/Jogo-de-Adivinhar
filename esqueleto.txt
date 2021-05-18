@@ -1,0 +1,44 @@
+function Jogador(nome="Jogador"){
+  //Informações do jogador
+  this.nome;
+  this.acertos;  
+  this.tentativa;
+
+  //Função que cria o elemento HTML e adiciona na tela
+  this.criar_elementos = ()=>{};
+  this.elementos = this.criar_elementos();
+  
+  //Função que atualiza a tentativa do jogador
+  this.nova_tentativa = ()=>{};
+  this.elementos.bt_atualizar.onclick = this.nova_tentativa;    
+
+  //Função que registra que o jogador fez um acerto
+  this.acertar = ()=>{};
+
+  //Função que registra que o jogador fez um erro
+  this.errar = ()=>{};
+}
+
+
+function Jogo(){
+  //Informações do jogo
+  this.nome;
+  this.jogadores;
+  this.segredo;
+
+  //Função que cria o elemento HTML e adiciona na tela
+  this.criar_elementos = ()=>{};
+  this.elementos = this.criar_elementos();
+
+
+  //Adicionar um novo jogador
+  this.adicionar_novo_jogador = ()=>{};  
+  this.elementos.bt_novo_jogador.onclick = this.adicionar_novo_jogador;
+  
+  //Verificar se alguém acertou a resposta
+  this.verificar_respostas = ()=>{};
+  this.elementos.bt_verificar_respostas.onclick = this.verificar_respostas;
+
+  //Gerando um novo segredo
+  this.gerar_novo_segredo = ()=>{};
+}
